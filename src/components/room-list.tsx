@@ -36,10 +36,10 @@ export function RoomList() {
                 <h3 className="font-medium ">{room.name}</h3>
                 <div className="flex items-center gap-2">
                   <Badge className="text-xs" variant={'secondary'}>
-                    {dayjs(room.createAt).toNow()}
+                    {dayjs(room.createdAt).toNow()}
                   </Badge>
                   <Badge className="text-xs" variant={'secondary'}>
-                    {room.questionsCount} Questions
+                    {room.questionsCount} Perguntas
                   </Badge>
                 </div>
               </div>

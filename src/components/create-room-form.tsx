@@ -47,9 +47,9 @@ export function CreateRoomsForm() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Create Room</CardTitle>
+        <CardTitle>Criar Salas</CardTitle>
         <CardDescription>
-          Create a new room for your team to collaborate.
+          Crie uma nova sala para sua equipe colaborar.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -64,9 +64,12 @@ export function CreateRoomsForm() {
               render={({ field }) => {
                 return (
                   <FormItem>
-                    <FormLabel>Name Room</FormLabel>
+                    <FormLabel>Nome da Sala</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Enter room name..." />
+                      <Input
+                        {...field}
+                        placeholder="Digite o nome da sala..."
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -80,9 +83,12 @@ export function CreateRoomsForm() {
               render={({ field }) => {
                 return (
                   <FormItem>
-                    <FormLabel>Description</FormLabel>
+                    <FormLabel>Descrição</FormLabel>
                     <FormControl>
-                      <Textarea {...field} />
+                      <Textarea
+                        {...field}
+                        placeholder="Digite a descrição da sala..."
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -90,7 +96,7 @@ export function CreateRoomsForm() {
               }}
             />
             <Button className="w-full" type="submit">
-              Create Room
+              Criar Sala
             </Button>
           </form>
         </Form>
