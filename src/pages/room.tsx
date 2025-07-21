@@ -1,5 +1,6 @@
 import { ArrowLeft, Radio } from 'lucide-react';
 import { Link, Navigate, useParams } from 'react-router-dom';
+import { Header } from '@/components/header';
 import { QuestionForm } from '@/components/question-form';
 import { QuestionList } from '@/components/question-list';
 import { Button } from '@/components/ui/button';
@@ -17,6 +18,7 @@ export function Room() {
 
   return (
     <div className="min-h-screen ">
+      <Header roomId={params.roomId} />
       <div className="container mx-auto max-w-4xl px-4 py-8">
         <div className="mb-8">
           <div className="mb-4 flex items-center justify-between">
